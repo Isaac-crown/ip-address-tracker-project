@@ -20,8 +20,10 @@ function loadDoc(e) {
 
     const inp = document.getElementById('inputText').value
 
+    // console.log(inp)
 
-xhr.open('GET', `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_S6NjFcY1W5l8NIBHDgSyv6kXnkyuJ&ipAddress=${inp}`, true)
+// xhr.open('GET', `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_S6NjFcY1W5l8NIBHDgSyv6kXnkyuJ&ipAddress=${inp}`, true)
+   xhr.open('GET', `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_VbHHSQSGtedsDP3y6YKPMLqAtCLPh&ipAddress=${inp}`, true)
 
 
 xhr.onload = function(){
@@ -37,7 +39,7 @@ xhr.onload = function(){
         const longitude = address.location.lng
         const latitude = address.location.lat
 
-       let map = L.map('map').setView([longitude, latitude], 13);
+       
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -68,8 +70,8 @@ function myApi () {
       const xml =  new XMLHttpRequest()
    
   
-      xml.open('GET', `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_S6NjFcY1W5l8NIBHDgSyv6kXnkyuJ&ipAddress=${ipE}`, true)
-  
+    //   xml.open('GET', `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_S6NjFcY1W5l8NIBHDgSyv6kXnkyuJ&ipAddress=${ipE}`, true)
+    xml.open('GET', `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_VbHHSQSGtedsDP3y6YKPMLqAtCLPh&ipAddress=${ipE}`, true)
   
       xml.onload = function(){
           if(this.status === 200) {
