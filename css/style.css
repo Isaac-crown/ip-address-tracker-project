@@ -1,17 +1,19 @@
-body{
-    border: 2px solid red;
+*{
+    /* border: 2px solid red; */
+    margin: 0;
+    padding: 0;
 }
 
 
 section{
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     flex-direction: column;
-    height: 100vh;
-    background-color: aqua;
+    /* height: 100vh; */
+    /* background-color: aqua; */
  
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 
@@ -19,13 +21,13 @@ section{
 .search-holder{
     background-image: url(/images/pattern-bg.png);
     text-align: center;
-    background-position: center;
+    background-position: center center;
     color: #fff;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 40vh;
+    /* height: 40vh; */
     padding: 1rem;
-    margin: 0 auto;
+   
 }
 
 
@@ -33,11 +35,12 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     background-color: #fff;
     color: #333;
     width: 80%;
     /* height: 25vh; */
-    padding: 2rem;
+    padding: 1rem;
 
     border-radius: 10px;
     margin: 0 auto;
@@ -53,7 +56,7 @@ section{
 .input-holder{
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 
 input{
@@ -61,6 +64,7 @@ input{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border: none;
+    padding: 1rem;
 }
 
 button{
@@ -75,6 +79,7 @@ button{
 
 .map-container{
     height: 50vh;
+    width: 100%;
     position: relative;
     z-index: 0;
 }
@@ -97,13 +102,10 @@ button{
     
 
     .flex{
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 70%;
-        text-align: center;
-        justify-content: center;
-        margin: 0 auto;
-        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: -150px;
     }
 
     .isp, .location, .time-zone{
@@ -111,9 +113,7 @@ button{
         text-align: center;
     }
 
-    .input-holder{
-        width: 100%;
-    }
+    
 
   
 }

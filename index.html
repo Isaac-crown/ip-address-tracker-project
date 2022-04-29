@@ -28,8 +28,9 @@
       <div class="search-holder">
         <h2>IP Address Tracker</h2>
         <form action="" id="submit">
-          <div class="input-holder">
-            <input type="text" placeholder="Search for any IP address or domian">
+          <div class="input-holder"  >
+            <input type="text" placeholder="Search for any IP address or domian" id="inputText" minlength="7" maxlength="15" size="15" pattern="^((\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$">
+            
           <button><i class="fa-solid fa-chevron-right"></i></button>
           </div>
         </form>
@@ -37,22 +38,22 @@
         <div class="flex">
           <div class="IP-address">
             <p>IP ADDRESS</p>
-            <h4>102.33625.66</h4>
+            <h4 id="ip-adrress">102.33625.66</h4>
           </div>
 
           <div class="location">
             <p>LOCATION</p>
-            <h4>Lagos State</h4>
+            <h4 id="location">Lagos State</h4>
           </div>
 
           <div class="time-zone">
             <p>TIMEZONE</p>
-            <h4>UTC - 05:00</h4>
+            <h4 id="timezone">UTC - 05:00</h4>
           </div>
 
           <div class="isp">
             <p>ISP</p>
-            <h4>SpaceX Starlink</h4>
+            <h4 id="isp">SpaceX Starlink</h4>
           </div>
         </div>
       </div>
