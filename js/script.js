@@ -22,8 +22,9 @@ function loadDoc(e) {
 
     // console.log(inp)
 
-// xhr.open('GET', `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_S6NjFcY1W5l8NIBHDgSyv6kXnkyuJ&ipAddress=${inp}`, true)
-   xhr.open('GET', `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_VbHHSQSGtedsDP3y6YKPMLqAtCLPh&ipAddress=${inp}`, true)
+
+    // xhr.open('GET', `https://geo.ipify.org/api/v2/country?apiKey=at_S6NjFcY1W5l8NIBHDgSyv6kXnkyuJ&ipAddress=${inp}`, true)
+  xhr.open('GET', `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_VbHHSQSGtedsDP3y6YKPMLqAtCLPh&ipAddress=${inp}`, true)
 
 
 xhr.onload = function(){
@@ -69,8 +70,8 @@ function myApi () {
     let ipE = data.ip
       const xml =  new XMLHttpRequest()
    
-  
-    //   xml.open('GET', `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_S6NjFcY1W5l8NIBHDgSyv6kXnkyuJ&ipAddress=${ipE}`, true)
+    //    xml.open('GET', `https://geo.ipify.org/api/v2/country?apiKey=at_S6NjFcY1W5l8NIBHDgSyv6kXnkyuJ&ipAddress=${ipE}`, true)
+    
     xml.open('GET', `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_VbHHSQSGtedsDP3y6YKPMLqAtCLPh&ipAddress=${ipE}`, true)
   
       xml.onload = function(){
